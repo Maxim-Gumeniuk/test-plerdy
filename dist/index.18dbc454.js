@@ -567,7 +567,7 @@ selects.onclick = function() {
     list.classList.toggle("hide");
 };
 
-},{"bootstrap":"h36JB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./swiper":"rrgcw","./validation":"1Gxkx"}],"h36JB":[function(require,module,exports) {
+},{"bootstrap":"h36JB","./swiper":"rrgcw","./validation":"1Gxkx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"h36JB":[function(require,module,exports) {
 /*!
   * Bootstrap v5.2.3 (https://getbootstrap.com/)
   * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)

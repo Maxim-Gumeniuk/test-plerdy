@@ -16,7 +16,14 @@
   @include small {
     --bs-modal-width: 450px;
   }
-    
+
+  @include extra-small {
+    --bs-modal-width: 1350px;
+    width: 100%;
+    margin-top: 100px;
+    --bs-modal-margin: auto;
+  }
+
   &-error {
     color: #da1616;
     text-transform: uppercase;
@@ -31,6 +38,9 @@
 
   &-dialog {
     max-height: 690px;
+    @include extra-small {
+      width: 340px;
+    }
   }
 
   &-close {
@@ -69,6 +79,10 @@
       border-bottom-left-radius: 10px;
       border-top-left-radius: 10px;
     }
+
+    @include extra-small {
+      width: 550px;
+    }
   }
 
   &-image {
@@ -77,6 +91,11 @@
     @include medium {
       display: none;
     }
+  }
+
+  &-backdrop {
+    width: 100%;
+    height: 100%;
   }
 
   &-footer {
