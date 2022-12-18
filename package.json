@@ -1,7 +1,7 @@
 {
   "name": "plerdy",
   "source": "src/index.html",
-  "homepage": "https://maxim-gumeniuk.github.io/test-plerdy/",
+  "homepage": ".",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "version": "1.0.0",
   "description": "",
