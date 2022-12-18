@@ -12476,6 +12476,7 @@ textarea.form-control-lg {
   max-width: 316px;
   margin: 0 auto;
   font-size: 34px;
+  line-height: 115%;
 }
 
 @media (max-width: 992px) {
