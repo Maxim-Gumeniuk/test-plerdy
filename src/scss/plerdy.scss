@@ -1,0 +1,127 @@
+@import './mixins.scss';
+@import './animation.scss';
+
+.plerdy {
+  background-color: #E2F2FF;
+  border-radius: 10px;
+  padding: 40px 20px 25px;
+  margin-bottom: 100px;
+  margin-top: 9%;
+    &-co:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    @include small {
+      margin-bottom: 30px;
+    }
+
+  &-text {
+    line-height: 150%;
+    @include small {
+      font-size: 14px;
+    }
+  }
+
+  &-subtitle {
+    @include small {
+      font-size: 12px;
+    }
+  }
+
+  &-co-box {
+    @include small {
+      min-width: 320px;
+    }
+  }
+
+  &-subtext {
+    color: #919191;
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 16px;
+    @include small {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+  }
+
+  &-content-image {
+    flex: 1 1 35%;
+    position: relative;
+    @include large {
+      margin-top: 20px;
+    }
+  }
+
+   &-title {
+    padding-top: 30px;
+    line-height: 120%;
+    @include small {
+      font-size: 28px;
+    }
+  }
+
+  &-button {
+    margin-bottom: 50px;
+    @include small {
+      margin-top: 20px;
+    }
+  }
+
+  &-image-bottom {
+    position: absolute;
+    right: 60%;
+    bottom: 20%;
+    animation: scale 2s ease-in-out 0s;
+    @include extra-small {
+      right: 66%;
+      max-width: 160px;
+      max-height: 140px;
+    }
+  }
+
+  &-image-top {
+    position: absolute;
+    right: 50%;
+    bottom: 70%;
+    animation: scale 5s ease-in-out 0s;
+    @include large {
+      bottom: 65%;
+    }
+
+    @include medium {
+      max-width: 220px;
+      max-height: 200px;
+    }
+
+    @include small {
+      max-width: 220px;
+      max-height: 200px;
+    }
+
+    @include extra-small {
+      max-width: 180px;
+      max-height: 180px;
+    }
+  }
+
+  &-image-right {
+    position: absolute;
+    left: 70%;
+    bottom: 55%;
+    animation: scale 3s ease-in-out 0s;
+    @include large {
+      left: 55%;
+      bottom: 45%;
+    }
+
+    @include small {
+      left: 60%;
+    }
+
+    @include extra-small {
+      max-width: 160px;
+      max-height: 180px;
+    }
+  }
+}

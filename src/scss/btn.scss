@@ -1,0 +1,8 @@
+
+@import './mixins.scss';
+
+.btn {
+  @include extra-small {
+    padding: 8px;
+  }
+}

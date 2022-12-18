@@ -1,0 +1,17 @@
+@import './mixins.scss';
+
+.reasons {
+  &-title {
+    font-size: 36px;
+    margin-right: 10px;
+    min-width: 340px;
+    @include small {
+      font-size: 20px;
+      line-height: 130%;
+    }
+  }
+
+  &-title-grey {
+    color: #919191;
+  }
+}

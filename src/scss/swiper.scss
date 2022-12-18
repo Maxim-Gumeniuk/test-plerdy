@@ -1,0 +1,35 @@
+.swiper {
+  &-but-prev {
+    cursor: pointer;
+    margin-right: 5px;
+    @include small {
+      display: none;
+    }
+  }
+
+  &-but-next {
+    cursor: pointer;
+    @include small {
+      display: none;
+    }
+  }
+
+  &-pagination {
+    display: none;
+    @include small {
+      display: block;
+    }
+  }
+}
+
+.slide {
+  background-color: #f8f8fa;
+  color: #001e41;
+  padding: 20px;
+  border-radius: 10px;
+  height: 372px;
+}
+
+.box-button {
+  margin-bottom: 20px;
+}

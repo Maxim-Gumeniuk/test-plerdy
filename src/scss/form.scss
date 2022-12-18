@@ -1,0 +1,42 @@
+@import './mixins.scss';
+
+.form {
+  &-conrol {
+    border: 1px solid #D5D5D6;
+    border-radius: 10px;
+    align-items: center;
+    padding: 8px 20px;
+    min-height: 37px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+  }
+
+  &-conrol-number { 
+    @extend .form-conrol;
+    margin: 0 auto;
+    padding: 20px 0px 20px 100px;
+    width: 10%;
+    display: inline-block;
+    flex: 1 1 auto;
+    height: 20px;
+  }
+}
+
+.conditions {
+  &-link {
+    color: #5D78FF;
+    text-decoration: none;
+  }
+}
+
+.number {
+  border: 1px solid #D5D5D6;
+  outline: none;
+  margin-left: 50px;
+}
+
+#input-tel {
+  border-radius: 10px;
+}

@@ -1,0 +1,37 @@
+@import './mixins.scss';
+
+.footer {
+  margin: 40px 0px 74px;
+  @include small {
+    margin-bottom: 30px;
+  }
+
+  &-box {
+    @include small {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &-link {
+    margin-right: 20px;
+    @include small {
+      max-width: 245px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-text {
+    max-width: 440px;
+    font-size: 14px;
+    @include small {
+      max-width: 410px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.hide {
+  visibility: hidden;
+}

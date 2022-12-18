@@ -1,0 +1,29 @@
+.header {
+  margin-bottom: 40px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.navbar {
+  &-brand {
+    padding-right: 20%;
+  }
+
+  &-link {
+    color: #7D7D7D;
+  }
+
+  &-toggler {
+    border: none;
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.sing-in {
+  margin-right: 40px;
+  line-height: 162%;
+  color: #5D78FF;
+}

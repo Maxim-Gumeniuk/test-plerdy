@@ -1,0 +1,64 @@
+@import './mixins.scss';
+
+.item {
+  flex-direction: column;
+  height: 60%;
+  position: relative;
+  &-title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  &-text {
+    font-size: 14px;
+    line-height: 130%;
+    color: #001E41;
+    flex: 1 1 auto;
+  }
+
+  &-circle {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #E3EEFF;
+    top: 120%;
+    left: 120px;
+    @include medium {
+      left: 40%;
+      top: 130%;
+    }
+
+    @include extra-small {
+      top: 120%;
+      left: 180px;
+    }
+  }
+
+  &-number {
+    color: #fff;
+    z-index: 2;
+    font-size: 50px;
+    position: absolute;
+    top: 130%;
+    left: 85%;
+    @include large {
+      top: 140%;
+      left: 85%;
+    }
+
+    @include medium {
+      top: 135%;
+      left: 75%;
+    }
+
+    @include extra-small {
+      top: 130%;
+      left: 85%;
+    }
+  }
+
+  &-slide {
+    overflow: hidden;
+  }
+}
