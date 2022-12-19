@@ -533,41 +533,21 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"1SICI":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "btn", ()=>btn);
-parcelHelpers.export(exports, "inputName", ()=>inputName);
-parcelHelpers.export(exports, "inputTel", ()=>inputTel);
-parcelHelpers.export(exports, "errorName", ()=>errorName);
-parcelHelpers.export(exports, "errorNumber", ()=>errorNumber);
-parcelHelpers.export(exports, "selects", ()=>selects);
-parcelHelpers.export(exports, "text", ()=>text);
-parcelHelpers.export(exports, "options", ()=>options);
-parcelHelpers.export(exports, "list", ()=>list);
-parcelHelpers.export(exports, "arrow", ()=>arrow);
 var _bootstrap = require("bootstrap");
 var _swiper = require("./swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _validation = require("./validation");
-const btn = document.getElementById("button-contact");
-const inputName = document.getElementById("input-name");
-const inputTel = document.getElementById("input-tel");
-const errorName = document.getElementById("error-name");
-const errorNumber = document.getElementById("error-number");
-const selects = document.getElementById("selectField");
-const text = document.getElementById("selectText");
-const options = document.getElementsByClassName("option");
-const list = document.getElementById("list");
-const arrow = document.getElementById("arrowIcon");
-btn.addEventListener("click", (0, _validation.formValidation));
-for (const option of options)option.onclick = function() {
-    text.innerHTML = this.textContent;
-    list.classList.toggle("hide");
+var _check = require("./check");
+(0, _check.btn).addEventListener("click", (0, _validation.formValidation));
+for (const option of (0, _check.options))option.onclick = function() {
+    (0, _check.text).innerHTML = this.textContent;
+    (0, _check.list).classList.toggle("hide");
 };
-selects.onclick = function() {
-    list.classList.toggle("hide");
+(0, _check.selects).onclick = function() {
+    (0, _check.list).classList.toggle("hide");
 };
 
-},{"bootstrap":"h36JB","./swiper":"rrgcw","./validation":"1Gxkx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"h36JB":[function(require,module,exports) {
+},{"bootstrap":"h36JB","./swiper":"rrgcw","./validation":"1Gxkx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./check":"7YOeL"}],"h36JB":[function(require,module,exports) {
 /*!
   * Bootstrap v5.2.3 (https://getbootstrap.com/)
   * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -14915,34 +14895,34 @@ exports.default = EffectCards;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "formValidation", ()=>formValidation);
-var _main = require("./main");
+var _check = require("./check");
 var _resetError = require("./resetError");
 const formValidation = ()=>{
-    if ((0, _main.inputName).value.trim().length === 0 && (0, _main.inputTel).value.trim().length === 0) {
-        (0, _main.inputName).style.border = "1px solid #da1616";
-        (0, _main.inputTel).style.border = "1px solid #da1616";
-        (0, _main.errorName).style.opacity = "1";
-        (0, _main.errorNumber).style.opacity = "1";
-        (0, _resetError.resetError)((0, _main.inputName), (0, _main.inputTel), (0, _main.errorName), (0, _main.errorNumber));
+    if ((0, _check.inputName).value.trim().length === 0 && (0, _check.inputTel).value.trim().length === 0) {
+        (0, _check.inputName).style.border = "1px solid #da1616";
+        (0, _check.inputTel).style.border = "1px solid #da1616";
+        (0, _check.errorName).style.opacity = "1";
+        (0, _check.errorNumber).style.opacity = "1";
+        (0, _resetError.resetError)((0, _check.inputName), (0, _check.inputTel), (0, _check.errorName), (0, _check.errorNumber));
         return;
     }
-    if ((0, _main.inputName).value.trim().length === 0) {
-        (0, _main.inputName).style.border = "1px solid #da1616";
-        (0, _main.errorName).style.opacity = "1";
-        (0, _resetError.resetError)((0, _main.inputName), (0, _main.inputTel), (0, _main.errorName), (0, _main.errorNumber));
+    if ((0, _check.inputName).value.trim().length === 0) {
+        (0, _check.inputName).style.border = "1px solid #da1616";
+        (0, _check.errorName).style.opacity = "1";
+        (0, _resetError.resetError)((0, _check.inputName), (0, _check.inputTel), (0, _check.errorName), (0, _check.errorNumber));
         return;
     }
-    if ((0, _main.inputTel).value.trim().length === 0) {
-        (0, _main.inputTel).style.border = "1px solid #da1616";
-        (0, _main.errorNumber).style.opacity = "1";
-        (0, _resetError.resetError)((0, _main.inputName), (0, _main.inputTel), (0, _main.errorName), (0, _main.errorNumber));
+    if ((0, _check.inputTel).value.trim().length === 0) {
+        (0, _check.inputTel).style.border = "1px solid #da1616";
+        (0, _check.errorNumber).style.opacity = "1";
+        (0, _resetError.resetError)((0, _check.inputName), (0, _check.inputTel), (0, _check.errorName), (0, _check.errorNumber));
         return;
     }
-    (0, _main.inputName).value = "";
-    (0, _main.inputTel).value = "";
+    (0, _check.inputName).value = "";
+    (0, _check.inputTel).value = "";
 };
 
-},{"./main":"1SICI","./resetError":"kzVOk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kzVOk":[function(require,module,exports) {
+},{"./resetError":"kzVOk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./check":"7YOeL"}],"kzVOk":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "resetError", ()=>resetError);
@@ -14954,6 +14934,30 @@ const resetError = (param1, param2, param3, param4)=>{
         param4.style.opacity = "0";
     }, 2000);
 };
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7YOeL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "btn", ()=>btn);
+parcelHelpers.export(exports, "inputName", ()=>inputName);
+parcelHelpers.export(exports, "inputTel", ()=>inputTel);
+parcelHelpers.export(exports, "errorName", ()=>errorName);
+parcelHelpers.export(exports, "errorNumber", ()=>errorNumber);
+parcelHelpers.export(exports, "selects", ()=>selects);
+parcelHelpers.export(exports, "text", ()=>text);
+parcelHelpers.export(exports, "options", ()=>options);
+parcelHelpers.export(exports, "list", ()=>list);
+parcelHelpers.export(exports, "arrow", ()=>arrow);
+const btn = document.getElementById("button-contact");
+const inputName = document.getElementById("input-name");
+const inputTel = document.getElementById("input-tel");
+const errorName = document.getElementById("error-name");
+const errorNumber = document.getElementById("error-number");
+const selects = document.getElementById("selectField");
+const text = document.getElementById("selectText");
+const options = document.getElementsByClassName("option");
+const list = document.getElementById("list");
+const arrow = document.getElementById("arrowIcon");
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["jQVXF","1SICI"], "1SICI", "parcelRequire16dd")
 
