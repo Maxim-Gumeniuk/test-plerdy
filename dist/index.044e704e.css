@@ -12600,7 +12600,7 @@ textarea.form-control-lg {
 }
 
 #selectField {
-  height: 42px;
+  height: 45px;
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -12632,7 +12632,7 @@ textarea.form-control-lg {
   cursor: pointer;
   justify-content: space-between;
   margin-bottom: 5px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   list-style: none;
   display: flex;
   position: relative;
