@@ -12611,8 +12611,12 @@ textarea.form-control-lg {
 
 #list {
   width: 100%;
+  z-index: 1000;
+  opacity: .99;
+  background-color: #fff;
   border: 2px solid #f3f3f3;
   border-radius: 10px;
+  position: relative;
   overflow: hidden;
 }
 

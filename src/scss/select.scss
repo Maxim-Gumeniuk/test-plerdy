@@ -18,7 +18,11 @@
   width: 100%;
   overflow: hidden;
   border: 2px solid #f3f3f3;
+  background-color: #fff;
   border-radius: 10px;
+  z-index: 1000;
+  opacity: 0.99;
+  position: relative;
 }
 
 #arrowIcon {
