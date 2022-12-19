@@ -17,7 +17,8 @@
 #list {
   width: 100%;
   overflow: hidden;
-  background-color: rgba(17, 16, 16, 0.2);
+  border: 2px solid #f3f3f3;
+  border-radius: 10px;
 }
 
 #arrowIcon {
@@ -28,7 +29,6 @@
 .option {
   z-index: 1;
   padding: 10px 20px;
-  font-weight: 500;
   display: flex;
   justify-content: space-between;
   width: 100px;

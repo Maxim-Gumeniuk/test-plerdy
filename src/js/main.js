@@ -1,7 +1,7 @@
 import * as bootstrap from 'bootstrap';
 import Swiper from './swiper';
 import { formValidation } from './validation';
-import { text, list, btn, options, selects } from './check';
+import { text, list, btn, options, selects,inputName, inputTel, modal, validation } from './check';
 
 btn.addEventListener('click', formValidation);
 

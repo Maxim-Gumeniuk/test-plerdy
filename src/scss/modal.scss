@@ -38,6 +38,7 @@
 
   &-dialog {
     max-height: 690px;
+    padding: 20px 0;
     @include extra-small {
       width: 340px;
     }
@@ -75,7 +76,7 @@
     border-right: 2px solid transparente;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 5px;
+    padding: 20px;
     @include medium {
       border-bottom-left-radius: 10px;
       border-top-left-radius: 10px;
@@ -115,5 +116,5 @@
       font-size: 12px;
       margin-left: 3px;
     }
-  }
+  }  
 }

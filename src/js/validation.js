@@ -23,6 +23,11 @@ export const formValidation = () => {
     return;
   }
 
+  if (typeof inputTel.value !== 'number') {
+    inputTel.style.border = '1px solid #da1616';
+    inputName.style.border = '1px solid #da1616';
+  }
+
   if (inputTel.value.trim().length === 0) {
     inputTel.style.border = '1px solid #da1616';
     errorNumber.style.opacity = '1';

@@ -547,7 +547,7 @@ for (const option of (0, _check.options))option.onclick = function() {
     (0, _check.list).classList.toggle("hide");
 };
 
-},{"bootstrap":"h36JB","./swiper":"rrgcw","./validation":"1Gxkx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./check":"7YOeL"}],"h36JB":[function(require,module,exports) {
+},{"bootstrap":"h36JB","./swiper":"rrgcw","./validation":"1Gxkx","./check":"7YOeL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"h36JB":[function(require,module,exports) {
 /*!
   * Bootstrap v5.2.3 (https://getbootstrap.com/)
   * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -14912,6 +14912,10 @@ const formValidation = ()=>{
         (0, _resetError.resetError)((0, _check.inputName), (0, _check.inputTel), (0, _check.errorName), (0, _check.errorNumber));
         return;
     }
+    if (typeof (0, _check.inputTel).value !== "number") {
+        (0, _check.inputTel).style.border = "1px solid #da1616";
+        (0, _check.inputName).style.border = "1px solid #da1616";
+    }
     if ((0, _check.inputTel).value.trim().length === 0) {
         (0, _check.inputTel).style.border = "1px solid #da1616";
         (0, _check.errorNumber).style.opacity = "1";
@@ -14922,20 +14926,7 @@ const formValidation = ()=>{
     (0, _check.inputTel).value = "";
 };
 
-},{"./resetError":"kzVOk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./check":"7YOeL"}],"kzVOk":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "resetError", ()=>resetError);
-const resetError = (param1, param2, param3, param4)=>{
-    setTimeout(()=>{
-        param1.style.border = "1px solid #D5D5D6";
-        param2.style.border = "1px solid #D5D5D6";
-        param3.style.opacity = "0";
-        param4.style.opacity = "0";
-    }, 2000);
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7YOeL":[function(require,module,exports) {
+},{"./check":"7YOeL","./resetError":"kzVOk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7YOeL":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "btn", ()=>btn);
@@ -14948,6 +14939,7 @@ parcelHelpers.export(exports, "text", ()=>text);
 parcelHelpers.export(exports, "options", ()=>options);
 parcelHelpers.export(exports, "list", ()=>list);
 parcelHelpers.export(exports, "arrow", ()=>arrow);
+parcelHelpers.export(exports, "modal", ()=>modal);
 const btn = document.getElementById("button-contact");
 const inputName = document.getElementById("input-name");
 const inputTel = document.getElementById("input-tel");
@@ -14958,6 +14950,20 @@ const text = document.getElementById("selectText");
 const options = document.getElementsByClassName("option");
 const list = document.getElementById("list");
 const arrow = document.getElementById("arrowIcon");
+const modal = document.getElementById("exampleModal");
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kzVOk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "resetError", ()=>resetError);
+const resetError = (param1, param2, param3, param4)=>{
+    setTimeout(()=>{
+        param1.style.border = "1px solid #D5D5D6";
+        param2.style.border = "1px solid #D5D5D6";
+        param3.style.opacity = "0";
+        param4.style.opacity = "0";
+    }, 2000);
+};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["jQVXF","1SICI"], "1SICI", "parcelRequire16dd")
 
