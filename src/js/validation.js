@@ -1,5 +1,6 @@
-import {inputName, inputTel, errorName, errorNumber, select} from './main';
+import {inputName, inputTel, errorName, errorNumber, select} from './check';
 import { resetError } from './resetError';
+
 export const formValidation = () => {
 
   if (inputName.value.trim().length === 0 && inputTel.value.trim().length === 0) {
@@ -9,6 +10,7 @@ export const formValidation = () => {
     errorNumber.style.opacity = '1';
 
     resetError(inputName, inputTel, errorName, errorNumber);
+
     return;
   }
 
@@ -17,6 +19,7 @@ export const formValidation = () => {
     errorName.style.opacity = '1';
 
     resetError(inputName, inputTel, errorName, errorNumber);
+
     return;
   }
 
@@ -25,6 +28,7 @@ export const formValidation = () => {
     errorNumber.style.opacity = '1';
 
     resetError(inputName, inputTel, errorName, errorNumber);
+
     return;
   }
 
