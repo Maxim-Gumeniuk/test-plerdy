@@ -6,7 +6,7 @@
   --bs-modal-footer-border-width: 0;
   --bs-modal-width: 800px;
   --bs-modal-border-radius: none;
-  --bs-modal-margin: 4.5rem;
+  --bs-modal-margin: 1.5rem;
   --bs-modal-header-padding: 0;
   @include medium {
     --bs-modal-width: 500px;
@@ -54,6 +54,7 @@
   }
 
   &-title {
+    margin-top: -10px;
     font-size: 34px;
     line-height: 115%;
     max-width: 316px;
