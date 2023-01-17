@@ -12414,7 +12414,7 @@ textarea.form-control-lg {
   --bs-modal-footer-border-width: 0;
   --bs-modal-width: 800px;
   --bs-modal-border-radius: none;
-  --bs-modal-margin: 4.5rem;
+  --bs-modal-margin: 1.5rem;
   --bs-modal-header-padding: 0;
   border: none;
 }
